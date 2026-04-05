@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Add Emplyee Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body 
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    .container 
+    {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 
+    {
+        text-align: center;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea 
+    {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"]
+		 {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+		input[type="reset"]
+		 {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+			justify-content:space-between;
+			margin:20px 0px;
+    }
+    input[type="submit"]:hover 
+    {
+        background-color: #45a049;
+    }
+    input[type="reset"]:hover 
+    {
+        background-color: #45a049;
+    }
+    .theme-option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .theme-option img {
+        width: 600px;
+        height: 450px;
+        margin-right: 10px;
+    }
+
+    select 
+	 {
+        margin-left: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 style="color:black">New Employee Details</h1>
+    <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required><br/><br/>
+
+			<label>Date of Birth</label>
+        <input type="date" placeholder="Enter birth date" required></br/><br/>
+
+       <label>Your Address</label>
+        <input type="text" placeholder="Enter your address" required><br/><br/>
+
+			<label>District</label>
+        <input type="text" placeholder="Enter your district" required><br/><br/>
+
+			<label>Taluka</label>
+        <input type="text" placeholder="Enter your taluka" required><br/><br/>
+
+			<label>State</label>
+        <input type="text" placeholder="Enter your state" required><br/><br/>
+
+       <label>Mobile Number</label>
+        <input type="text" placeholder="Enter your mobile number" required><br/><br/>
+
+       <label>Your Email</label>
+        <input type="email" placeholder="Enter your email" required><br/><br/>
+        
+        <label>Employement Type</label>
+        <select required>
+            <option value="">Select Employement type</option>
+            <option value="Manager">Manager</option>
+            <option value="Developer">Developer</option>
+        </select><br/><br/>
+
+        <label>Job Title</label>
+        <input type="text" placeholder="Enter job title" required><br/><br/>
+        
+			<label>Department</label>
+        <input type="text" placeholder="Enter department" required><br/><br/>
+			
+			<label>Salary</label>
+        <input type="text" placeholder="Enter salary" required><br/><br/>
+
+			<label>Start Date</label>
+        <input type="date" required><br/><br/>  
+        
+			<label>Contract End Date(if applicable)</label>
+        <input type="date"></br></br>
+
+			<label>Aadhar Number</label>
+        <input type="text" placeholder="Enter your aadhar number" required=""><br/><br/>
+
+			<label>Bank Account Number</label>
+        <input type="text" placeholder="Enter your bank account number" required><br/><br/>
+        
+        <input type="submit" onclick="show();" value="Submit">
+			<input type="reset" value="Reset">
+    </form>
+</div>
+<script>
+		function show()
+		{
+			if(form!=null)
+			{
+				alert("Your details are submitted!!");
+			}
+		}
+</script>
+</body>
+</html>

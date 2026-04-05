@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+	img
+	{
+		background-size:cover;
+		background-attachment:fixed;
+		background-position:absolute;
+	}
+	.button
+   {
+       display: flex;
+       margin-left: 25%;
+       margin-right: 25%;
+       margin-top: 0%;
+			justify-content:space-evenly;
+    }
+		h4
+		{
+			color:purple;
+		}
+		u
+		{
+			color:purple;
+		}
+		html
+		{	
+			scroll-behavior:smooth;
+		}
+</style>
+</head>
+<body>
+	 <div class="button">
+		<a href="#home" onclick="document.getElementById('iframe').src='home.html';"><h4><u>Home</u></h4></a>
+		
+		<a href="services.html"><h4><u>Services</u></h4></a>
+
+		<a href="#form" onclick="document.getElementById('iframe').src='form2.html';"><h4><u>Add Employee</u></h4></a>
+
+		<a href="#contact" onclick="document.getElementById('iframe').src='contact.html';"><h4><u>Contact</u></h4></a>
+		
+		<a href="dashboard.html"><h4><u>Admin Dashboard</u></h4></a>		 
+	</div>
+		<img src="employee1.png" style="height:90%;width:100%;"></img>
+
+		<iframe id="iframe" src="" style="margin-top:2%;height:200%;width:100%;border:none;"></iframe>
+		<button id="home"></button>
+		<button id="form"></button>
+		<button id="contact"></button>
+</script>
+</body>
+</html>
